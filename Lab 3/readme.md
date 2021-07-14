@@ -135,7 +135,7 @@ inctf{0n3_h4lf
 /mnt/e/Tools/V.exe -f "Lab 3.raw" --profile=Win7SP1x86_23418 dumpfiles -Q 0x0000000004f34148 -D .
 ```
 
-- Now we get the [`Image`](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/Assets/1.jpeg).
+- Now we got the [`Image`](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/Assets/1.jpeg).
 - Let's run steghide command on the image.
 
 ```

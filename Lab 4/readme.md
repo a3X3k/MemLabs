@@ -1,6 +1,6 @@
 # [`MemLabs Lab 4 - Obsession`](https://mega.nz/#!Tx41jC5K!ifdu9DUair0sHncj5QWImJovfxixcAY-gt72mCXmYrE)
 
-- MemLabs is an educational, introductory set of CTF-styled challenges made by @stuxnet9999 (aka Abhiram Kumar) which is aimed to encourage students, security researchers, and also CTF players to get started with the field of Memory Forensics.
+- MemLabs is an educational, introductory set of CTF-styled challenges made by [`@stuxnet9999 (aka Abhiram Kumar)`](https://github.com/stuxnet999) which is aimed to encourage students, security researchers, and also CTF players to get started with the field of Memory Forensics.
 
 ### Challenge Description
 

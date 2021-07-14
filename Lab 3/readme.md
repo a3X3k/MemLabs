@@ -154,7 +154,6 @@ _1s_n0t_3n0ugh}
 
 ### [`inctf{0n3_h4lf_1s_n0t_3n0ugh}`]()
 
-
-
+##### Volatility Commands Reference - [`📖`](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference#dumpfiles) [`📖`](https://www.codersnoon.com/2021/01/volatility-cheatsheet-memory-forensics.html) 
 
 

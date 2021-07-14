@@ -77,7 +77,7 @@ $ sudo apt install steghide
 
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/Assets/6.png?raw=true)
 
-#### [`Evilscript.py`](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/Assets/Script.py)
+### [`Evilscript.py`](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/Assets/Script.py)
 
 ```py
 import sys
@@ -98,7 +98,7 @@ if __name__ == "__main__":
 	f.close()
 ```
 
-#### [`Vip.txt`](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/Assets/Vip.txt)
+### [`Vip.txt`](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/Assets/Vip.txt)
 
 ```
 am1gd2V4M20wXGs3b2U=
@@ -144,7 +144,7 @@ steghide extract -sf 1.jpeg
 - When it prompts for password, use the first half of the flag as its password.
 - Finally we get the **secret.txt**.
 
-#### [`Secret.txt`](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/Assets/secret%20text)
+### [`Secret.txt`](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/Assets/secret%20text)
 
 ```
 _1s_n0t_3n0ugh}

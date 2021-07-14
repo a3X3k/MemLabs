@@ -145,6 +145,7 @@ steghide extract -sf 1.jpeg
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/Assets/9.png?raw=true)
 
 - When it prompts for password, use the first half of the flag as its password.
+- This is purely a guess and it worked.
 - Finally we get the **secret.txt**.
 
 ### [`Secret.txt`](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/Assets/secret%20text)

@@ -1,5 +1,7 @@
 # [`MemLabs Lab 3 - The Evil's Den`](https://mega.nz/#!2ohlTAzL!1T5iGzhUWdn88zS1yrDJA06yUouZxC-VstzXFSRuzVg)
 
+- MemLabs is an educational, introductory set of CTF-styled challenges made by @stuxnet9999 (aka Abhiram Kumar) which is aimed to encourage students, security researchers, and also CTF players to get started with the field of Memory Forensics.
+
 ### Challenge Description
 
 > A malicious script encrypted a very secret piece of information I had on my system. 

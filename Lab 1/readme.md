@@ -97,7 +97,9 @@ flag{G00d_BoY_good_girL}
 - Now that we got two flags.
 - One more flag is yet to be found.
 - We have already done the analysis using `cmdscan`,`consoles` and `pslist`.
-- Only `cmdline` plugin is left which lists all the command line arguments with the help of **PID**.
+- Now let's analyse further with the plugins left.
+- `cmdline` plugin is also left which lists all the command line arguments with the help of **PID**.
+- So let's try with this first.
 
 ```
 /mnt/e/Tools/V.exe -f "Lab 1.raw" --profile=Win7SP1x64 cmdline

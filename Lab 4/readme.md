@@ -41,7 +41,7 @@
 
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%204/Assets/3.png)
 
-- In that we can find that there is a file named **Important.txt** which has the flag.
+- In that we shall find that there is a file named **Important.txt** which has the flag.
 
 ```
 inctf{1_is_n0t_EQu4l_7o_2_bUt_th1s_d0s3nt_m4ke_s3ns3}

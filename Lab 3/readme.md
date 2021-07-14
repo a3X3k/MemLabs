@@ -32,7 +32,7 @@ $ sudo apt install steghide
 
 ### Analysis
 
-- From the challenge description **A malicious script** we shall understand that there should be some script associated.
+- From the challenge description **A malicious script** we shall understand that there should be some `script` associated.
 - So I tried to look the executed commands in **cmd** using the `cmdscan` plugin, but nothing useful.
 - So the next analysis I did was to identify the presence of any suspicious processes and to view any high-level running processes.
 - The `pslist` plugin will list the processes of a system.
@@ -58,7 +58,7 @@ $ sudo apt install steghide
 - Next step is to extract/dump the required files.
 - `dumpfiles` plugin is used to extract the **memory mapped** and **cached files**.
 - Inorder to dump the file we must know the `physical address` of the file ( ie ) the location of the file.
-- `filescan` plugin is used to find FILE_OBJECTs in physical memory.
+- `filescan` plugin is used to find **FILE_OBJECTs** in physical memory.
 - Since we know the files which is required we shall **grep** it directly by specifying the file name.
 
 ```
@@ -104,7 +104,7 @@ if __name__ == "__main__":
 am1gd2V4M20wXGs3b2U=
 ```
 
-- From the script we shall understand that **Tts taking a Input, and Xoring it with Key 3, Encoding the output to Base64 and writing it in the vip.txt file**.
+- From the script we shall understand that **Its taking a Input, and Xoring it with Key 3, Encoding the output to Base64 and writing it in the vip.txt file**.
 - Now the way to get the original text is to backtrack the commands that were executed.
 
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/Assets/7.png?raw=true)

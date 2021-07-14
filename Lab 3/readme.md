@@ -2,7 +2,8 @@
 
 ### Challenge Description
 
-- A malicious script encrypted a very secret piece of information I had on my system. Can you recover the information for me please?
+> A malicious script encrypted a very secret piece of information I had on my system. 
+> Can you recover the information for me please?
 
 **Note - 1 :** This challenge is composed of only 1 flag. The flag split into 2 parts.
 

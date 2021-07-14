@@ -109,7 +109,7 @@ flag{G00d_BoY_good_girL}
 
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/3.png)
 
-- We shall see that there is a files named [`Important.rar`](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/1.rar).
+- We shall see that there is a file named [`Important.rar`](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/1.rar).
 - Next step is to **extract/dump** the file.
 - `dumpfiles` plugin is used to extract the memory mapped and cached files.
 - Inorder to **dump** the file we must know the **physical address** of the file ( ie ) the location of the file.

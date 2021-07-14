@@ -51,7 +51,12 @@
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/9.png)
 
 - We shall see that there is Base64 encoded text `ZmxhZ3t0aDFzXzFzX3RoM18xc3Rfc3Q0ZzMhIX0=`.
-- [`Decoding`](https://www.base64decode.org/) this gives `flag{th1s_1s_th3_1st_st4g3!!}`
+- [`Decoding`](https://www.base64decode.org/) this gives the flag.
+
+```
+flag{th1s_1s_th3_1st_st4g3!!}
+```
+
 - Now we got our first flag.
 - Let's look into the next hint given in the challenge description.
 - From the hint **When the crash happened, she was trying to draw something**, we shall understand that she was using some graphics editor like `Ms Paint`.
@@ -88,4 +93,81 @@
 ```
 flag{G00d_BoY_good_girL}
 ```
+
+- Now that we got two flags.
+- One more flag is yet to be found.
+- We have already done the analysis using `cmdscan`,`consoles` and `pslist`.
+- Only `cmdline` plugin is left which lists all the command line arguments with the help of **PID**.
+
+```
+/mnt/e/Tools/V.exe -f "Lab 1.raw" --profile=Win7SP1x64 cmdline
+```
+
+![](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/2.png)
+
+![](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/3.png)
+
+- We shall see that there is a files named [`Important.rar`](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/1.rar).
+- Next step is to **extract/dump** the file.
+- `dumpfiles` plugin is used to extract the memory mapped and cached files.
+- Inorder to **dump** the file we must know the **physical address** of the file ( ie ) the location of the file.
+- `filescan` plugin is used to find FILE_OBJECTs in physical memory.
+- Since we know the files which is required we shall **grep** it directly by specifying the file name.
+
+```
+/mnt/e/Tools/V.exe -f "Lab 1.raw" --profile=Win7SP1x64 filescan | grep Important.rar
+```
+
+![](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/4.png)
+
+- Now we got the physical address of the file and so that we shall **dump** the file using the physical address as offset.
+
+```
+/mnt/e/Tools/V.exe -f "Lab 1.raw" --profile=Win7SP1x64 dumpfiles -Q 0x000000003fa3ebc0 -D .
+```
+
+![](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/5.png)
+
+- But the file is **encrypted** and luckily **7-Zip** showed an error which made the guess easier. 
+
+![](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/8.png)
+
+- Looking the `hex dump` we shall get the **hint** for the **password**.
+
+![](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/6.png)
+
+> **Hint**
+> > Password is NTLM hash(in uppercase) of Alissa's account passwd
+
+- So now we need the **hash** of the account.
+- Inorder to extract and **decrypt cached domain credentials** stored in the **registry** we have the `hashdump` plugin.
+
+```
+/mnt/e/Tools/V.exe -f "Lab 1.raw" --profile=Win7SP1x64 hashdump
+```
+
+![](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/7.png)
+
+```
+Hash - f4ff64c8baac57d22f22edc681055ba6
+Upper Case - F4FF64C8BAAC57D22F22EDC681055BA6
+```
+
+- Now we will be able to extract the [`Image`](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/flag3.png) which has the third flag.
+
+```
+flag{w3ll_3rd_stage_was_easy}
+```
+
+### Flags
+
+```
+flag{th1s_1s_th3_1st_st4g3!!}
+flag{G00d_BoY_good_girL}
+flag{w3ll_3rd_stage_was_easy}
+```
+
+### Volatility Commands Reference - [`📖`](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference#dumpfiles) [`📖`](https://www.codersnoon.com/2021/01/volatility-cheatsheet-memory-forensics.html) 
+
+
 

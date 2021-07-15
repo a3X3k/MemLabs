@@ -67,6 +67,7 @@ flag{w3lc0m3_T0_$T4g3_!_Of_L4B_2}
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%202/Assets/6.png)
 
 - It's clear that there is a file named `Hidden.kdbx` in secrets directory.
+- And we suspect this file since the challenge description hints us `password manager`.
 
 #### Kdbx
 
@@ -86,7 +87,7 @@ flag{w3lc0m3_T0_$T4g3_!_Of_L4B_2}
 
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%202/Assets/7.png)
 
-- Now we got the physical address of the file and so that we shall dump the file using the physical address as offset.
+- Now we got the physical address of the file and so that we shall dump the file using the physical address as an offset.
 
 ```
 /mnt/e/Tools/V.exe -f "Lab 2.raw" --profile=Win7SP1x64 dumpfiles -Q 0x000000003fb112a0 -D .
@@ -157,14 +158,14 @@ flag{w0w_th1s_1s_Th3_SeC0nD_ST4g3_!!}
 - From the hint in the challenge description **applications are browsers**, we shall understand that there is something to do with the browser **history/cookies/Downloads** etc.
 - Trying with the `iehistory` plugin doesn't give anything.
 - If we go back to the `pslist` view, we shall see the **Chrome Browser** running.
-- So it's clear that the **browser** associated to him is **Chrome**. 
+- So it's clear that the **browser** associated with him is **Chrome**. 
 
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%202/Assets/14.png)
 
 - Now we have to extract all useful information from Google Chrome's address space.
-- By default volatility doesn't have the plugins to view/extract the chrome history.
+- By default, volatility doesn't have the plugins to view/extract the chrome history.
 - But it can be additionally installed.
-- You can refer this [`Blog`](http://blog.superponible.com/2014/08/31/volatility-plugin-chrome-history/).
+- You can refer to this [`Blog`](http://blog.superponible.com/2014/08/31/volatility-plugin-chrome-history/).
 - You can pull the chrome history [`manually`](https://www.foxtonforensics.com/browser-history-examiner/chrome-history-location#:~:text=Chrome%20Searches%20are%20stored%20in,within%20the%20%27urls%27%20table.&text=Chrome%20Session%20Data%20is%20stored,and%20%27Last%20Tabs%27%20files) without plugins.
 - `C:\Users\<username>\AppData\Local\Google\Chrome\User Data\Default` this is where the chrome history is stored in `Windows 7`.
 - We are concerned about `Windows 7` here since our profile is `Windows 7`.

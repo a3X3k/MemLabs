@@ -20,9 +20,9 @@
 /mnt/e/Tools/V.exe -f "Lab 1.raw" imageinfo
 ```
 
-### Analysis
-
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/1.png)
+
+### Analysis
 
 - From the challenge description **We suddenly saw a black window pop up with some thing being executed**, we shall understand that it's a `console shell (cmd.exe)`.
 - So let's start with this hint.

@@ -102,7 +102,9 @@ flag{w3lc0m3_T0_$T4g3_!_Of_L4B_2}
 - So now we have to find the password.
 - The [`Cheat Sheet`](https://www.codersnoon.com/2021/01/volatility-cheatsheet-memory-forensics.html) which I used to learn the volatility plugin gave me the hint what to do.
 
+<div align="center">
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%202/Assets/20.png)
+</div>
 
 - As you can see, just grepping for keywords like `kdbx`,`Important`,`Pass` or `Password` might give you something since in most of the cases the file name will be kept unique to identify it.
 - This entirely depends on the challenge. 

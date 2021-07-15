@@ -138,8 +138,9 @@ flag{G00d_BoY_good_girL}
 
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/Assets/6.png)
 
-> **Hint**
-> > Password is NTLM hash(in uppercase) of Alissa's account passwd
+#### Hint
+
+> Password is NTLM hash(in uppercase) of Alissa's account passwd
 
 - So now we need the **hash** of the account.
 - Inorder to extract and **decrypt cached domain credentials** stored in the **registry** we have the `hashdump` plugin.

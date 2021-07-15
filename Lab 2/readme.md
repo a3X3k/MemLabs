@@ -68,10 +68,11 @@ flag{w3lc0m3_T0_$T4g3_!_Of_L4B_2}
 
 - It's clear that there is a file named `Hidden.kdbx` in secrets directory.
 
-> **Kdbx**
-> > The data files created by **KeePass Password Safe** are known as **KDBX** files.
-> > They usually refer to the **KeePass Password Database**. 
-> > These files contain passwords in an encrypted database wherein they can only be viewed if the user set a master password and accessed them through that master password.
+#### Kdbx
+
+> The data files created by **KeePass Password Safe** are known as **KDBX** files.
+> They usually refer to the **KeePass Password Database**. 
+> These files contain passwords in an encrypted database wherein they can only be viewed if the user set a master password and accessed them through that master password.
 
 - Let's extract the **kdbx** file.
 - `dumpfiles` plugin is used to **extract** the memory mapped and cached files.

@@ -94,8 +94,7 @@ flag{w3lc0m3_T0_$T4g3_!_Of_L4B_2}
 
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%202/Assets/8.png)
 
-<img src="https://github.com/a3X3k/MemLabs/blob/main/Lab%202/Assets/12.png" alt="drawing" height="300"/>
-![]()
+<img src="https://github.com/a3X3k/MemLabs/blob/main/Lab%202/Assets/12.png" alt="drawing" height="350"/>
 
 - Now we got the [`KDBX`](https://github.com/a3X3k/MemLabs/blob/main/Lab%202/Assets/1.kdbx) file and when we try to open, it asks for the password and we don't have any password now.
 - So now we have to find the password.
@@ -125,7 +124,7 @@ flag{w3lc0m3_T0_$T4g3_!_Of_L4B_2}
 
 - Now we got the [`Image`](https://github.com/a3X3k/MemLabs/blob/main/Lab%202/Assets/11.png) file.
 
-![](https://github.com/a3X3k/MemLabs/blob/main/Lab%202/Assets/11.png)
+<img src="https://github.com/a3X3k/MemLabs/blob/main/Lab%202/Assets/11.png" alt="drawing" height="350"/>
 
 - We got the password now.
 

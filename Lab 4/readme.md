@@ -27,6 +27,8 @@
 
 ![](https://github.com/a3X3k/MemLabs/blob/main/Lab%204/Assets/1.png)
 
+### Analysis
+
 - From the challenge description we shall understand that we have to find the important file which was deleted.
 - **Volatility** has the `mftparser` plugin which scans for potential **Master File Table (MFT)** entries in memory and prints out information for certain attributes.
 - It displays the **deleted files or files modified** and **creation Date** etc.

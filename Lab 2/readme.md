@@ -1,6 +1,6 @@
 <div align="center">
-  
 # [`MemLabs Lab 2 - A New World`](https://mega.nz/#!ChoDHaja!1XvuQd49c7-7kgJvPXIEAst-NXi8L3ggwienE1uoZTk)
+</div>
 
 - MemLabs is an educational, introductory set of CTF-styled challenges made by [`@stuxnet9999 (aka Abhiram Kumar)`](https://github.com/stuxnet999) which is aimed to encourage students, security researchers, and also CTF players to get started with the field of Memory Forensics.
 
@@ -228,9 +228,6 @@ flag{oK_So_Now_St4g3_3_is_DoNE!!}
 ```
 
 ### Volatility Commands Reference - [`📖`](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference#dumpfiles) [`📖`](https://www.codersnoon.com/2021/01/volatility-cheatsheet-memory-forensics.html) 
-
-  </div>
-
 
 
 

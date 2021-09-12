@@ -1,6 +1,6 @@
 <div align="center">
 
-# [MemLabs](https://github.com/stuxnet999/MemLabs)
+# [Mem Labs](https://github.com/stuxnet999/MemLabs)
   
 <br/>
 

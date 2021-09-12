@@ -1,6 +1,6 @@
 <div align="center">
 
-# [`MemLabs`](https://github.com/stuxnet999/MemLabs)
+# [MemLabs](https://github.com/stuxnet999/MemLabs)
   
 <br/>
 
@@ -10,9 +10,9 @@
   
 | Lab | Name |
 | :-----: | :-: |
-| Lab 1 | [`Beginner's Luck`](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/readme.md) |
-| Lab 2 | [`A New World`](https://github.com/a3X3k/MemLabs/blob/main/Lab%202/readme.md) |
-| Lab 3 | [`The Evil's Den`](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/readme.md) |
-| Lab 4 | [`Obsession`](https://github.com/a3X3k/MemLabs/blob/main/Lab%204/readme.md) |
+| Lab 1 | [Beginner's Luck](https://github.com/a3X3k/MemLabs/blob/main/Lab%201/readme.md) |
+| Lab 2 | [A New World](https://github.com/a3X3k/MemLabs/blob/main/Lab%202/readme.md) |
+| Lab 3 | [The Evil's Den](https://github.com/a3X3k/MemLabs/blob/main/Lab%203/readme.md) |
+| Lab 4 | [Obsession](https://github.com/a3X3k/MemLabs/blob/main/Lab%204/readme.md) |
   
 </div>
